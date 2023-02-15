@@ -4,12 +4,13 @@
   "icons": [
     {
       "src": "icons/android-chrome-512.png",
-      "sizes": "192x192",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "name": "A Pocket Space",
   "short_name": "Pocket",
+  "id": "/index.html",
   "start_url": "index.html",
   "theme_color": "#000"
 }

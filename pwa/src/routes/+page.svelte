@@ -6,6 +6,10 @@
 		const addBtn = document.querySelector('.add-button') as HTMLButtonElement;
 		addBtn.style.display = 'none';
 
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('./sw.js');
+		}
+
 		window.addEventListener('beforeinstallprompt', (e) => {
 			// Prevent Chrome 67 and earlier from automatically showing the prompt
 			e.preventDefault();
